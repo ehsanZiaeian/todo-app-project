@@ -1,0 +1,40 @@
+<!-- dashboard page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+
+    <!-- embed code of my fonts, source: fonts.google.com -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Todo App</h1>
+      <div class="stats">
+        Total: <span id="count-total">0</span> Completed:
+        <span id="count-done">0</span>
+        Remaining: <span id="count-left">0</span>
+      </div>
+      <form id="task-form" autocomplete="off">
+        <label for="task-input">Task</label>
+        <input
+          id="task-input"
+          type="text"
+          placeholder="Add a new task..."
+          required
+        />
+        <button type="submit">Add</button>
+      </form>
+      <ul id="task-list"></ul>
+      <button id="clear-done" type="button">Clear completed</button>
+    </main>
+    <script src="dashboard.js"></script>
+  </body>
+</html>

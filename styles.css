@@ -1,0 +1,146 @@
+/*
+  Style inspiration: Codewars – https://www.codewars.com
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #1f1f1f;
+  color: #eeeeee;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+  font-family: 'Chewy', system-ui;
+  margin: 16px 0;
+  text-align: center;
+}
+main {
+  max-width: 720px;
+  margin: 40px auto;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  border-radius: 12px;
+  padding: 16px;
+}
+.stats {
+  color: #b0b0b0;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
+}
+.stats #count-total,
+.stats #count-done,
+.stats #count-left {
+  margin-right: 15px;
+}
+#task-form {
+  margin-bottom: 12px;
+}
+#task-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #1b1b1b;
+  color: #eeeeee;
+  margin: 6px 0;
+  outline: none;
+}
+#task-input:focus {
+  border-color: #d43c33;
+  outline: 2px solid #d43c33;
+  outline-offset: 2px;
+}
+#task-form button {
+  display: inline-block;
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #d43c33;
+  color: #fff;
+  cursor: pointer;
+}
+#task-list {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+#task-list li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background: #242424;
+}
+button[type='button'] {
+  background: #3a3a3a;
+  color: #eeeeee;
+  border: 1px solid #4a4a4a;
+  border-radius: 8px;
+  cursor: pointer;
+}
+button[type='button']:hover {
+  border-color: #d43c33;
+}
+#clear-done {
+  margin-top: 8px;
+  color: #b0b0b0;
+}
+li.done span {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+.auth h1 {
+  text-align: center;
+}
+.auth section {
+  background: #242424;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 12px 0;
+}
+.auth h2 {
+  margin: 0 0 8px;
+}
+.auth label {
+  display: block;
+  color: #b0b0b0;
+  margin: 8px 0 4px;
+}
+.auth input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background: #1b1b1b;
+  color: #eeeeee;
+  outline: none;
+  margin-bottom: 10px;
+}
+.auth input:focus {
+  border-color: #d43c33;
+  outline: 2px solid #d43c33;
+  outline-offset: 2px;
+}
+.auth button[type='submit'] {
+  padding: 10px 14px;
+  border: 0;
+  border-radius: 8px;
+  background: #d43c33;
+  color: #fff;
+  cursor: pointer;
+}
+.auth button[type='submit']:hover {
+  border-color: #d43c33;
+}
+#register-msg,
+#login-msg {
+  color: #b0b0b0;
+  min-height: 12em;
+  margin-top: 6px;
+}

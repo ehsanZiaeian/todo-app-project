@@ -1,0 +1,56 @@
+<!-- first page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- embed code of my fonts, source: fonts.google.com -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chewy&family=Roboto+Condensed:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Login • Todo</title>
+  </head>
+  <body>
+    <main class="auth">
+      <h1>Account</h1>
+      <div>
+        <!-- register section -->
+        <section>
+          <h2>Register</h2>
+          <form id="register-form" autocomplete="off">
+            <label for="reg-username">Username</label>
+            <input id="reg-username" required />
+            <label for="reg-name">Name</label>
+            <input id="reg-name" required />
+            <label for="reg-password">Password</label>
+            <input id="reg-password" type="password" required />
+            <button type="submit">Create account</button>
+          </form>
+
+          <!-- a message will show to the user :
+           1- Username is already taken. or
+           2- Account created. You can log in now. -->
+          <p id="register-msg"></p>
+        </section>
+
+        <!-- login section -->
+        <section>
+          <h2>Login</h2>
+          <form id="login-form" autocomplete="off">
+            <label for="login-username">Username</label>
+            <input id="login-username" required />
+            <label for="login-password">Password</label>
+            <input id="login-password" type="password" required />
+            <button type="submit">Login</button>
+          </form>
+
+          <!-- the message is : Invalid username or password. -->
+          <p id="login-msg"></p>
+        </section>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
